@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management | Student | Dashboard</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css" >
+</head>
+<body>
+
+
+
+
+    <nav class="navbar navbar-default menu navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="../login.html" class="navbar-brand">
+                    <img src="../assets/favicon.ico" alt="Brand" class="img-responsive menu-logo"> <span>School Management</span> <span class="version">v1.0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="main">
+
+
+
+        <div class="row" style="padding: 20px;">
+            <div class="col-lg-3 well sidebar">
+                <div class="row user">
+                    <img src="../assets/favicon.ico" class="logo img-responsive col-lg-1">
+                    <span>
+                        <h5>Hello, Student !!</h5>
+                        <h6>CLASS VI OAK STUDENT</h6>
+                    </span>
+                </div>
+                <hr>
+                <li class="sidebarlink">
+                    <a href="dash.html" class="navbar-link">
+                        <i class="fa fa-home"></i> Dashboard
+                    </a>
+                </li>
+                <li class="sidebarlink">
+                    <a href="class.html" class="navbar-link">
+                        <i class="fab fa-google"></i> Your Classes
+                    </a>
+                </li>
+                <li class="sidebarlink">
+                    <a href="hw.html" class="navbar-link">
+                        <i class="fa fa-book"></i> Homework
+                    </a>
+                </li>
+                <li class="sidebarlink">
+                    <a href="book.html" class="navbar-link">
+                        <i class="fa fa-link"></i> Books
+                    </a>
+                </li>
+                <li class="sidebarlink">
+                    <a href="boubt.html" class="navbar-link">
+                        <i class="fa fa-comment"></i> Doubt
+                    </a>
+                </li>
+                <li class="sidebarlink">
+                    <a href="call.html" class="navbar-link">
+                        <i class="fa fa-phone"></i> Support
+                    </a>
+                </li>
+                <li class="sidebarlink">
+                    <a href="logout.html" class="navbar-link">
+                        <i class="fa fa-sign-out-alt"></i> Sign Out
+                    </a>
+                </li>
+                <li class="sidebarlink">
+                    <a href="../exam/student" class="navbar-link">
+                        <i class="fa fa-list"></i> Exam
+                    </a>
+                </li>
+            </div>
+            <div class="col-lg-9 well">
+
+
+
+
+                <h2>My Dashboard</h2>
+                <hr>
+
+
+
+
+                <div class="row">
+                    <div class="col-lg-3 bg-success">
+                        <h3>
+                            <i class="fab fa-google"></i>
+                        </h3>
+                        <hr>
+                        <p>0 Class Attained</p>
+                    </div>
+                    <div class="col-lg-3 bg-success">
+                        <h3>
+                            <i class="fab fa-google"></i>
+                        </h3>
+                        <hr>
+                        <p>0 Class Absent</p>
+                    </div>
+                    <div class="col-lg-3 bg-success">
+                        <h3>
+                            <i class="fab fa-google"></i>
+                        </h3>
+                        <hr>
+                        <p>0 Class Delayed</p>
+                    </div>
+                    <div class="col-lg-3 bg-success">
+                        <h3>
+                            <i class="fab fa-google"></i>
+                        </h3>
+                        <hr>
+                        <p>0 Class Suspended</p>
+                    </div>
+                    <div class="col-lg-3 bg-warning">
+                        <h3>
+                            <i class="fa fa-book"></i>
+                        </h3>
+                        <hr>
+                        <p>0 Homework Done</p>
+                    </div>
+                    <div class="col-lg-3 bg-warning">
+                        <h3>
+                            <i class="fa fa-book"></i>
+                        </h3>
+                        <hr>
+                        <p>0 Homework UnDone</p>
+                    </div>
+                    <div class="col-lg-3 bg-warning">
+                        <h3>
+                            <i class="fa fa-book"></i>
+                        </h3>
+                        <hr>
+                        <p>0 Homework Pending</p>
+                    </div>
+                    <div class="col-lg-3 bg-warning">
+                        <h3>
+                            <i class="fa fa-book"></i>
+                        </h3>
+                        <hr>
+                        <p>0 Homework Delayed</p>
+                    </div>
+                </div>
+
+
+
+
+                <hr>
+
+
+
+
+                <div class="container-fluid" style="padding: 20px !important;">
+                    <div class="bg-success">
+                        <h3 class="text-center">Exam Report</h3>
+                    </div>
+                    <div class="examReportView">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#pt1result" data-toggle="tab">PT 1</a>
+                            </li>
+                            <li>
+                                <a href="#t1result" data-toggle="tab">Term 1</a>
+                            </li>
+                            <li>
+                                <a href="#pt2result" data-toggle="tab">PT 2</a>
+                            </li>
+                            <li>
+                                <a href="#t2result" data-toggle="tab">Term 2</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="pt1result" class="tab-pane fade in active">
+                              <span><h3>Preodic Test 1- Results</h3></span> <span class="btn btn-danger"><i class="fa fa-print"></i> Print</span>
+                              <hr>
+                              <table class="table table-striped">
+                                  <thead>
+                                      <tr>
+                                          <th>Subject</th>
+                                          <th>Total Marks</th>
+                                          <th>Marks Obtained</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <th>English</th>
+                                          <th>-:-</th>
+                                          <th>-:-</th>
+                                      </tr>
+                                      <tr>
+                                          <th>Science</th>
+                                          <th>-:-</th>
+                                          <th>-:-</th>
+                                      </tr>
+                                      <tr>
+                                          <th>Hindi</th>
+                                          <th>-:-</th>
+                                          <th>-:-</th>
+                                      </tr>
+                                      <tr>
+                                          <th>Bengali</th>
+                                          <th>-:-</th>
+                                          <th>-:-</th>
+                                      </tr>
+                                      <tr>
+                                          <th>Hindi TL</th>
+                                          <th>-:-</th>
+                                          <th>-:-</th>
+                                      </tr>
+                                      <tr>
+                                          <th>Bengali TL</th>
+                                          <th>-:-</th>
+                                          <th>-:-</th>
+                                      </tr>
+                                      <tr>
+                                          <th>SSC</th>
+                                          <th>-:-</th>
+                                          <th>-:-</th>
+                                      </tr>
+                                      <tr>
+                                          <th>Mathematics</th>
+                                          <th>-:-</th>
+                                          <th>-:-</th>
+                                      </tr>
+                                      <tr>
+                                          <th>Computer</th>
+                                          <th>-:-</th>
+                                          <th>-:-</th>
+                                      </tr>
+                                      <tr class="bg-success">
+                                          <th>Class Attendance</th>
+                                          <th>-:-</th>
+                                          <th>-:-</th>
+                                      </tr>
+                                      <tr class="bg-success">
+                                          <th>Homework</th>
+                                          <th>-:-</th>
+                                          <th>-:-</th>
+                                      </tr>
+                                      <tr class="bg-success">
+                                          <th>Vocabulary</th>
+                                          <th>-:-</th>
+                                          <th>-:-</th>
+                                      </tr>
+                                      <tr class="bg-success">
+                                          <th>Speaking</th>
+                                          <th>-:-</th>
+                                          <th>-:-</th>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                            </div>
+                            <div id="pt2result" class="tab-pane fade">
+                                <span><h3>Preodic Test 2- Results</h3></span> <span class="btn btn-danger"><i class="fa fa-print"></i> Print</span>
+                                <hr>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Subject</th>
+                                            <th>Total Marks</th>
+                                            <th>Marks Obtained</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>English</th>
+                                            <th>-:-</th>
+                                            <th>-:-</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Science</th>
+                                            <th>-:-</th>
+                                            <th>-:-</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Hindi</th>
+                                            <th>-:-</th>
+                                            <th>-:-</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Bengali</th>
+                                            <th>-:-</th>
+                                            <th>-:-</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Hindi TL</th>
+                                            <th>-:-</th>
+                                            <th>-:-</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Bengali TL</th>
+                                            <th>-:-</th>
+                                            <th>-:-</th>
+                                        </tr>
+                                        <tr>
+                                            <th>SSC</th>
+                                            <th>-:-</th>
+                                            <th>-:-</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Mathematics</th>
+                                            <th>-:-</th>
+                                            <th>-:-</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Computer</th>
+                                            <th>-:-</th>
+                                            <th>-:-</th>
+                                        </tr>
+                                        <tr class="bg-success">
+                                            <th>Class Attendance</th>
+                                            <th>-:-</th>
+                                            <th>-:-</th>
+                                        </tr>
+                                        <tr class="bg-success">
+                                            <th>Homework</th>
+                                            <th>-:-</th>
+                                            <th>-:-</th>
+                                        </tr>
+                                        <tr class="bg-success">
+                                            <th>Vocabulary</th>
+                                            <th>-:-</th>
+                                            <th>-:-</th>
+                                        </tr>
+                                        <tr class="bg-success">
+                                            <th>Speaking</th>
+                                            <th>-:-</th>
+                                            <th>-:-</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="t1result" class="tab-pane fade">
+                              <span><h3>Term 1- Results</h3></span> <span class="btn btn-danger"><i class="fa fa-print"></i> Print</span>
+                              <hr>
+                              <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Total Marks</th>
+                                        <th>Marks Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>English</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Science</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Hindi</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Bengali</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Hindi TL</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Bengali TL</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>SSC</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Mathematics</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Computer</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr class="bg-success">
+                                        <th>Class Attendance</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr class="bg-success">
+                                        <th>Homework</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr class="bg-success">
+                                        <th>Vocabulary</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr class="bg-success">
+                                        <th>Speaking</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                            <div id="t2result" class="tab-pane fade">
+                              <span><h3>Term 2- Results</h3></span> <span class="btn btn-danger"><i class="fa fa-print"></i> Print</span>
+                              <hr>
+                              <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Total Marks</th>
+                                        <th>Marks Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>English</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Science</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Hindi</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Bengali</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Hindi TL</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Bengali TL</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>SSC</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Mathematics</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Computer</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr class="bg-success">
+                                        <th>Class Attendance</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr class="bg-success">
+                                        <th>Homework</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr class="bg-success">
+                                        <th>Vocabulary</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                    <tr class="bg-success">
+                                        <th>Speaking</th>
+                                        <th>-:-</th>
+                                        <th>-:-</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <nav class="navbar navbar-default footer navbar-fixed-bottom">
+        <div class="navbar-header txt-center">
+            <a href="#" class="navbar-brand">Developed And Maintained By Sudipta Soumyajit</a>
+        </div>
+    </nav>
+</body>
+</html>

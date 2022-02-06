@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+h1,h2,h3,h4,h5,h6,p,li,ul,a, .btn{
+    font-family: 'PT Sans', sans-serif !important;
+}
+body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    background-color: floralwhite;
+}
+/*#00054f*/
+.navbar-brand{
+    display: flex;
+}
+.navbar-brand .menu-logo{
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+}
+.navbar-brand span{
+    margin: 0 10px;
+}
+.navbar-brand .version{
+    margin: 0 2px !important;
+    font-size: 10px;
+}
+.navbar{
+    border: 0px !important;
+    border-radius: 0px !important;
+    background-color: #00054f !important;
+}
+.navbar-link, .navbar-brand{
+    color: white !important;
+}
+.main{    
+    margin-top: 50px;
+    background-color: wheat;
+    padding: 20px;
+    height: 525px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.loginpage{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.loginpage button{
+    width: 400px !important;
+}
+.sidebar{
+    background-color: #00054f !important;
+    border: none !important;
+    height: 435px;
+    position: fixed;
+    overflow-y: scroll;
+    color: white !important;
+}
+.logo{
+    border-radius: 100% !important;
+    background-color: none !important;
+    width: 80px !important;
+    height: 50px !important;
+}
+.sidebarlink{
+    list-style: none;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.sidebarlink a:hover{
+    text-decoration: none;
+}
+@media only screen and (max-width: 1000px) {
+    .user{
+        text-align: center;
+    }
+}
+.examReportView{
+    padding: 20px;
+}
+.chatui{
+    padding: 0 !important;
+    margin: 0 !important;
+    background-image: url("https://wallpapercave.com/dwp1x/wp3998740.png") !important;
+}
+.chatmenuhead{
+    background-color: teal;
+    padding: 15px;
+    color: white;
+}
+.talkpage{
+    height: 378px;
+}
+.teacherchat{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+.studentchat{
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+}
